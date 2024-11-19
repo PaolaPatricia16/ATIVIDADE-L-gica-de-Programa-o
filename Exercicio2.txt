@@ -1,0 +1,27 @@
+programa {
+  funcao inicio() {
+    inteiro numero[10], x, soma=0, media=0
+    
+  para (x=0; x<10; x++){
+      escreva("Digite um numero: ")
+      leia(numero[x])
+      soma = soma + numero[x]
+  }
+  
+  media = soma/10
+
+  escreva("Soma: ",soma)
+  escreva("\n Media: ",media)
+
+  escreva("elementos indices impares")
+  para (x=0; x<10; x++){
+    escreva(numero[x], " ")
+  }
+  escreva("elementos indices pares")
+  para (x=0; x<10; x++){
+    se(numero[x]%2 == 0){
+    escreva(numero[x], " ")}
+  }
+
+  }
+}
