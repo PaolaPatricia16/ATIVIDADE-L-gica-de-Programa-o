@@ -1,0 +1,27 @@
+programa {
+  funcao inicio() {
+    
+    inteiro numero[10],x,j,menor
+
+    para (x=0; x<10; x++){
+      escreva("Digite um numero: ")
+      leia(numero[x])
+    }
+
+    para (x = 0; x < 10; x++){
+      para (j = x+1; j < 10; j++){
+        se (numero[x] < numero[j]){
+          menor = numero[x]
+          numero[x] = numero[j]
+          numero[j] = menor
+
+        }
+      }
+    }
+    para (x=0; x<10; x++){
+      escreva("\n" +numero[x])
+
+   }
+    
+  }
+}
