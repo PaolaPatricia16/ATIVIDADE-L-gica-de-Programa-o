@@ -11,16 +11,21 @@ programa {
   media = soma/10
 
   escreva("Soma: ",soma)
-  escreva("\n Media: ",media)
+  escreva("\nMedia: ",media)
 
-  escreva("elementos indices impares")
+
+  escreva("\nElementos indices pares: ")
   para (x=0; x<10; x++){
-    escreva(numero[x], " ")
+    se(x % 2 == 0){
+    escreva(numero[x] ,"\t")
+    }
   }
-  escreva("elementos indices pares")
+
+  escreva("\nElementos indices impares: ")
   para (x=0; x<10; x++){
-    se(numero[x]%2 == 0){
-    escreva(numero[x], " ")}
+    se (x % 2 != 0){
+    escreva(numero[x], "\t")
+    }
   }
 
   }
